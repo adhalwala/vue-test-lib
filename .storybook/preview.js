@@ -8,7 +8,7 @@ export const parameters = {
 
 export const decorators = [
   () => ({
-    template: '<v-app><story/></v-app>',
+    template: '<v-app><v-main><story/></v-main></v-app>',
     vuetify
   }),
 ]

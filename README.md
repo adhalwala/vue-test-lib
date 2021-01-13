@@ -5,19 +5,14 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for storybook development
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+npm run storybook
 ```
 
-### Lints and fixes files
+### Compiles and build library for production publish
 ```
-npm run lint
+npm run build-lib
 ```
 
 ### Customize configuration
