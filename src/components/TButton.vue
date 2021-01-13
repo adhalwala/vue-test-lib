@@ -1,10 +1,9 @@
 <template>
-  <div>
-    <button @click="increment">{{ text }}</button>
-  </div>
+    <v-btn @click="increment">{{ text }}</v-btn>
 </template>
 <script>
 export default {
+  name: 'TButton',
   data () {
     return {
       count: 0
