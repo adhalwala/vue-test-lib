@@ -3,7 +3,7 @@
 </template>
 <script>
 export default {
-  name: 'TButton',
+  name: 't-button',
   data () {
     return {
       count: 0

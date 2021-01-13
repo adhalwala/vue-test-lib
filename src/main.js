@@ -1,14 +1,14 @@
 import TButton from './components/TButton.vue'
-// import Vuetify from 'vuetify'
-// import vuetify from '@/plugins/vuetify' // path to vuetify export
+import SimpleButton from './components/SimpleButton.vue'
 
-const install = (Vue, option) => {
+const install = (Vue, options) => {
     if (!options || !options.Vuetify) {
       throw new Error('Please initialise plugin with a Vuetify.')
     }
     
-    Vue.use(option.Vuetify)
+    Vue.use(options.Vuetify)
     Vue.component('t-button', TButton)
+    Vue.component('simple-button', SimpleButton)
 };
 
 const VueLibTest = {
@@ -16,13 +16,3 @@ const VueLibTest = {
 };
 
 export default VueLibTest;
-// import Vue from 'vue'
-// import TButton from './components/TButton.vue'
-// import vuetify from '@/plugins/vuetify' // path to vuetify export
-
-// Vue.config.productionTip = false
-
-// new Vue({
-//   vuetify,
-//   render: h => h(TButton),
-// }).$mount('#app')
